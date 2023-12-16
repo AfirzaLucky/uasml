@@ -3,20 +3,21 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import pandas as pd
+import streamlit as st
+import pandas as pd
 import numpy as np
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, ConfusionMatrixDisplay
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_selection import mutual_info_classif
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import train_test_split
+from imblearn.over_sampling import SMOTE  # Add this line
 import pickle
-from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix, ConfusionMatrixDisplay
+
+# ... (rest of your code)
+
 # import math
 # import matplotlib.pyplot as plt
 
